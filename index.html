@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO Movies</title>
+    <script src="https://kit.fontawesome.com/970cc5a7d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="Image/png" href="Stuff/image.png">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navBar">
+        <div class="navDiv">
+            <div class="logo"><a href=""> <span>RO </span>Movies</a></div>
+            <ul>
+                <li class="tabs"><a href="" >Home</a></li>
+                <li class="tabs"><a href="" onclick="showAlert1()">About</a></li>
+                <li class="tabs"><a href="" onclick="showAlert2()">Use App</a></li>
+                <li class="tabs"><a href="" onclick="showAlert3()">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- searchBox -->
+    <div class="wrapper">
+        <div class="search-container">
+            <div class="search-element">
+                <div class="filters">    
+                    <input type="tel" class="yearBox" id="yearBox" placeholder="Year of Released" >
+                    <select  class="plotBox" id="plotBox" placeholder="plot ">
+                    <option value="full">Plot: Full</option>
+                    <option value="short">Plot: Short</option>
+                    </select>
+                    <select  class="typeBox" id="typeBox" >
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode</option>
+                    </select>
+                </div>
+                <input type="text" class="form-control" id="movie-search-box" placeholder="Title of your Movies/Sereis  " onkeyup="findMovies()" onclick="findMovies()">
+                
+                <div class="search-list"  id="search-list">
+                    <!-- list-here -->
+                     <!-- <div class="search-list-item">
+                      
+                     </div> -->
+
+                
+                       
+                </div>
+            </div>
+        </div>
+        <!-- infoBox -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid"  id="result-grid">
+                    <!-- movie info -->
+                    <!-- <div class="movie-poster">
+                        <img src="Stuff/image.png" alt="movie-poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">Guardians of galaxy Vol.2</h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year:2017</li>
+                            <li class="rated">Rating:PG-13</li>
+                            <li class="released">Released: 05 MAy 2017</li>
+                        </ul>
+                        <p class="genre"><b>Genre:</b>Action,Adventure,Comedy</p>
+                        <p class="writer"><b>Writer:</b>James</p>
+                        <p class="actors"><b>Actors:</b>Chris</p>
+                        <p class="plot"><b>Plot:</b>The fmfnnkfdjbnfjkfdjkndkb, f gfgn fngag</p>
+                        <p class="language"><b>Language:</b>English</p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b>Nominated for 1 oscar</p>                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer of page -->
+<footer>
+    <div class="footer">
+        <div >Designed by Rohit</div>
+        <div>Copyright©️RohitYadav'24</div>
+        <div class="footerIcons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+    
+<script src="script.js"></script>
+</body>
+</html>
